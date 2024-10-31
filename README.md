@@ -6,7 +6,7 @@ A hysterical, interactive circle reacting to the cursor's position and speed in 
 
 <br />
 
-[Check it out HERE](https://olgv.github.io/morelittle-whitefollows/)
+[Demo page HERE](https://olgv.github.io/morelittle-whitefollows/)
 
 ![](/whitefollows.jpg)
 ```
