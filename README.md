@@ -6,7 +6,10 @@ A hysterical, interactive circle reacting to the cursor's position and speed in 
 
 <br />
 
-**How to ?**  
-Click inside the window and move your cursor. No mobile support.
+[Check it out HERE](https://olgv.github.io/morelittle-whitefollows/)
 
 ![](/whitefollows.jpg)
+```
+How to ?  
+Click inside the window and move your cursor, nothing special. No mobile support.
+```
