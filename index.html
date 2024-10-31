@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>White Follows</title>
+    <style>
+        body{ background-color: #000;}
+        .circle{ position: absolute;top: 0;left: 0;border-radius: 50%;background-color: #fff;transform: translate(-50%,-50%) scale(1);transform-origin: center;transition: transform .1s,opacity .2s;}
+    </style>
+</head>
+<body>
+    <script>
+        const circle = document.createElement('div');
+        circle.className = 'circle';
+        document.body.appendChild(circle);
+        let prevX = 0, prevY = 0;
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX, y = e.clientY;
+            const distance = Math.sqrt((x - prevX) ** 2 + (y - prevY) ** 2);
+            const size = Math.max(Math.min(distance * 10, 500), 100);
+            circle.style.left = `${x}px`;
+            circle.style.top = `${y}px`;
+            circle.style.transform = `translate(-50%, -50%) scale(${size / 100})`;
+            circle.style.opacity = 1;
+            circle.style.width = `${size}px`;
+            circle.style.height = `${size}px`;
+            prevX = x;
+            prevY = y;
+        });
+        document.addEventListener('mouseout', () => {
+            circle.style.opacity = 0.5;
+        });
+    </script>
+</body>
+</html>
